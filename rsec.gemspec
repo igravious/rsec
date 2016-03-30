@@ -1,5 +1,5 @@
 require 'yaml'
-YAML::ENGINE.yamler = 'psyck'
+YAML::ENGINE.yamler = ((RUBY_VERSION >= "2.0") ? 'psych' : 'syck')
 Gem::Specification.new do |s|
   s.name = "rsec"
   s.version = "0.3.6"
