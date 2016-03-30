@@ -1,3 +1,4 @@
+require 'yaml'
 YAML::ENGINE.yamler = 'syck'
 Gem::Specification.new do |s|
   s.name = "rsec"
