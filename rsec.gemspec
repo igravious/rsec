@@ -1,5 +1,5 @@
 require 'yaml'
-YAML::ENGINE.yamler = 'syck'
+YAML::ENGINE.yamler = 'psyck'
 Gem::Specification.new do |s|
   s.name = "rsec"
   s.version = "0.3.6"
